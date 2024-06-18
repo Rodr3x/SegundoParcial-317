@@ -1,0 +1,12 @@
+perro = Image.open('/content/drive/MyDrive/SEGUNDO PARCIAL 317/perromil.jpg').convert('L')
+dalmata = Image.open('/content/drive/MyDrive/SEGUNDO PARCIAL 317/dalmatamil.png').convert('L')
+
+
+spr1 = csr_matrix(np.array(perro))
+spr2 = csr_matrix(np.array(dalmata))
+
+mult = spr1.dot(spr2)
+
+print("   X  Y       VALUE")
+print("-------------------")
+print(mult)

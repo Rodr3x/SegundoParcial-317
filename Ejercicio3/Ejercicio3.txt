@@ -1,0 +1,10 @@
+perro = cv2.imread('/content/drive/MyDrive/SEGUNDO PARCIAL 317/perro.jpg')
+dalmata = cv2.imread('/content/drive/MyDrive/SEGUNDO PARCIAL 317/dalmata.png')
+
+# SUMA
+suma = cv2.add(perro, dalmata)
+suma
+
+# RESTA
+resta = cv2.subtract(perro, dalmata)
+resta

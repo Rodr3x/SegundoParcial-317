@@ -1,0 +1,26 @@
+from google.colab import drive
+drive.mount('/content/drive')
+
+#IMPORTAMOS TODAS LAS LIBRERIAS
+import numpy as np
+import cv2
+import scipy.sparse
+from PIL import Image
+
+# Cargamos y mostramos las imagenes
+perro = Image.open('/content/drive/MyDrive/SEGUNDO PARCIAL 317/perro.jpg').convert('L')
+dalmata = Image.open('/content/drive/MyDrive/SEGUNDO PARCIAL 317/dalmata.png').convert('L')
+
+print(np.array(perro))
+
+print(np.array(dalmata))
+
+# Suma de matrices
+mtr = np.array(perro) + np.array(dalmata)
+print(mtr)
+
+# RESULTADO
+sparse = csr_matrix(mtr)
+print("   X  Y       VALUE")
+print("-------------------")
+print(sparse)
